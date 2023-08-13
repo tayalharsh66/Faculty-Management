@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Search Faculty</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 20px;
+  text-align: left;
+}
+
+label, input[type="submit"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #ddd;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>Search Faculty</h1>
+    <form action="/searchFac" method="post">
+      <label for="search">Search:</label>
+      <input type="text" id="search" name="search">
+      <input type="submit" value="Go">
+    </form>
+  </body>
+</html>
